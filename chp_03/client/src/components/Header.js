@@ -1,9 +1,5 @@
 import React from "react";
-
+import "../style.css";
 export default function Header() {
-  return (
-    <div>
-      <h1>NavBar</h1>
-    </div>
-  );
+  return <header className="navbar">This is header</header>;
 }

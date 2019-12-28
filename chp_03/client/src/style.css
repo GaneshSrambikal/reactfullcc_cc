@@ -1,0 +1,18 @@
+* {
+  margin: 0;
+}
+.navbar {
+  background-color: black;
+  font-size: 24px;
+  color: aliceblue;
+  height: 100px;
+  margin-bottom: 15px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.greeting {
+}
+main {
+}

@@ -1,0 +1,14 @@
+.content {
+  padding: 8px;
+  
+  font-weight: lighter;
+}
+.content ul li {
+  list-style: none;
+}
+.content ul li:first-child {
+  list-style: lower-greek;
+}
+/* .content ul li h5 {
+  margin: 0;
+} */

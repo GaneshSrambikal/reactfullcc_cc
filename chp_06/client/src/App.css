@@ -1,0 +1,31 @@
+
+.App {
+  text-align: center;
+  width: auto;
+  background: url(./assets/bg.jpg);
+  background-repeat: repeat;
+  justify-content: center;
+}
+.App h2 {
+  background-color: springgreen;
+  width: 70%;
+  margin: 10px auto;
+  text-align: center;
+  justify-content: center;
+}
+.container {
+  background-color: rgb(255, 214, 214);
+  margin: 20px auto;
+  width: 70%;
+}
+
+@media only screen and (max-width: 600px) {
+  .container {
+    width: 100%;
+    margin: 0px auto;
+  }
+  .App h2{
+    margin: 0px auto 0px auto;
+    width: auto;
+  }
+}

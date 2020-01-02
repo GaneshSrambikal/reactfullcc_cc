@@ -1,7 +1,6 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap");
 body {
   background-color: steelblue;
-
 }
 
 .todo-list {
@@ -16,7 +15,6 @@ body {
     0 10px 1px -4px rgba(0, 0, 0, 0.15), 0 20px 0 -10px #eee,
     0 20px 1px -9px rgba(0, 0, 0, 0.15);
   padding: 30px;
- 
 }
 .todo-item {
   display: flex;
@@ -25,11 +23,12 @@ body {
   padding: 30px 20px 0;
   width: 70%;
   border-bottom: 1px solid #cecece;
-  font-family: 'Roboto Mono', monospace;
+  font-family: "Roboto Mono", monospace;
   font-weight: 100;
   font-size: 15px;
   color: #333333;
   list-style: none;
+  font-size: 18px;
 }
 input[type="checkbox"] {
   margin-right: 10px;
@@ -44,4 +43,14 @@ ul li {
 }
 p {
   display: inline;
+}
+
+@media only screen and (max-width: 600px) {
+  .todo-list {
+    width: 100%;
+    align-items: flex-start;
+  }
+  .todo-item {
+   width: 90%;
+  }
 }

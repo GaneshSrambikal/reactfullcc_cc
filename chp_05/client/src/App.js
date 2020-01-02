@@ -1,12 +1,27 @@
-import React from 'react';
-import './App.css';
-import NavBar from './components/NavBar';
-import MainContent from './components/MainContent';
-import Footer from './components/Footer';
+import React from "react";
+import "./App.css";
+import ContactCard from "./components/ContactCard";
+
 function App() {
   return (
-    <div className="App">
-      <>
+    <div className="contacts">
+      <ContactCard
+        contacts={{
+          name: "MR.whiteson",
+          imgUrl: "http://placekitten.com/300/200" ,
+          phone: "(515)-2485944",
+          email: "abc@gmailc.om"
+        }}
+      />
+
+      <ContactCard
+        contacts={{
+          name: "killer",
+          imgUrl: "http://placekitten.com/300/200",
+          phone: "(515)-2211944",
+          email: "abadfdc@gmailc.om"
+        }}
+      />
     </div>
   );
 }

@@ -5,7 +5,7 @@ export default function TodoItem(props) {
     <div className="todo-item">
       <ul>
         <li>
-          <input type="checkbox"  checked={props.completed} /> <p style={{textDecoration: props.completed? "line-through":""}}> {props.task}</p>
+          <input type="checkbox"  checked={props.task.completed} /> <p style={{textDecoration: props.task.completed? "line-through":""}}> {props.task.task}</p>
         </li>
       </ul>
     </div>

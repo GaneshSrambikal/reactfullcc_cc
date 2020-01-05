@@ -1,0 +1,17 @@
+.App {
+  margin-top: 10%;
+  text-align: center;
+}
+.App button{
+  background-color:white;
+  border: 1px solid steelblue;
+  border-radius: 3px;
+  color: black;
+  font-size: 18px;
+  text-transform: uppercase;
+  padding: 8px;
+  margin-right: 8px;
+}
+.App button:hover{
+  background-color: rgb(192, 192, 192);
+}

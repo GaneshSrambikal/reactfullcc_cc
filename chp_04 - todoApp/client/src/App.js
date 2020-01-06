@@ -20,7 +20,8 @@ class App extends Component {
           // } else {
           //   todo.completed = true;
           // }
-          todo.completed = !todo.completed
+          todo.completed = !todo.completed;
+        
         }
         return todo;
       });

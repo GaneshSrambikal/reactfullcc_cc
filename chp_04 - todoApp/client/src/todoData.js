@@ -7,7 +7,7 @@ const TodoData = [
   {
     id: "2",
     task: "shift bed",
-    completed: true
+    completed: false
   },
   {
     id: "3",

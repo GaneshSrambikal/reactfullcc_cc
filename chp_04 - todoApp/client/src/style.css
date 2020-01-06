@@ -21,26 +21,23 @@ body {
   justify-content: flex-start;
   align-items: center;
   padding: 30px 20px 0;
-  width: 70%;
+  width: 80%;
   border-bottom: 1px solid #cecece;
   font-family: "Roboto Mono", monospace;
   font-weight: 100;
-  font-size: 15px;
+  /* font-size: 15px; */
   color: #333333;
   list-style: none;
   font-size: 18px;
 }
 input[type="checkbox"] {
   margin-right: 10px;
-  font-size: 30px;
+  /* font-size: 30px; */
 }
 input[type="checkbox"]:focus {
   outline: 0;
 }
 
-ul li {
-  list-style: none;
-}
 p {
   display: inline;
 }
@@ -48,9 +45,11 @@ p {
 @media only screen and (max-width: 600px) {
   .todo-list {
     width: 100%;
-    align-items: flex-start;
+
+    margin-top: 10%;
   }
   .todo-item {
-   width: 90%;
+    width: 90%;
+    font-size: 20px;
   }
 }

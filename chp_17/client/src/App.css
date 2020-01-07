@@ -1,0 +1,9 @@
+.App {
+  text-align: center;
+  width: 50%;
+  margin: 10px auto;
+}
+.App input[type='text']{
+  width: 50%;
+}
+

@@ -1,5 +1,5 @@
 import React from "react";
-import "../App.css";
+
 import FormComponent from "./FormComponent";
 class FormContainer extends React.Component {
   constructor() {
@@ -11,12 +11,12 @@ class FormContainer extends React.Component {
     };
 
     this.handleChange = this.handleChange.bind(this);
-    this.handleSubmit = this.handleSubmit.bind(this);
+    // this.handleSubmit = this.handleSubmit.bind(this);
   }
   handleChange(event) {
     const { name, value } = event.target;
     this.setState({
-      [name]: value
+      [name]: [value]
     });
   }
   handleSubmit(event) {
@@ -26,7 +26,7 @@ class FormContainer extends React.Component {
   }
   render() {
     return (
-     <FormComponent/>
+     <FormComponent data={this.state} handleChange={this.handleChange}/>
     );
   }
 }

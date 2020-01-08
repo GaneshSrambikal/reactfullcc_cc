@@ -1,34 +1,38 @@
-import React from 'react'
-
+import React from "react";
+import "../App.css";
 export default function FormComponent(props) {
-    return (
-        <div className="App">
-        <form onSubmit={this.handleSubmit}>
-          <input
-            name="firstName"
-            placeholder="First Name"
-            value={this.state.firstName}
-            onChange={this.handleChange}
-          />
-          <input
-            name="lastName"
-            placeholder="Last Name"
-            value={this.state.lastName}
-            onChange={this.handleChange}
-          />
-          <input
-            name="age"
-            placeholder="age"
-            value={this.state.age}
-            onChange={this.handleChange}
-          />
-          <button>Submit</button>
-        </form>
-        <hr />
-        <h1>info Detail</h1>
-        <h2>First Name</h2> : <h3>{}</h3>
-        <h2>Last Name</h2> : <h3>{}</h3>
-        <h2>Age</h2> : <h3>{}</h3>
-      </div>
-    )
+  return (
+    <div className="App">
+      <form>
+        <input
+          type="text"
+          name="firstName"
+          placeholder="First Name"
+          value={props.data.firstName}
+          onChange={props.handleChange}
+        />
+        <br />
+        <input
+          type="text"
+          name="lastName"
+          placeholder="Last Name"
+          value={props.data.lastName}
+          onChange={props.handleChange}
+        />
+        <br />
+        <input
+          type="text"
+          name="age"
+          placeholder="age"
+          value={props.data.age}
+          onChange={props.handleChange}
+        />
+      </form>
+      <hr />
+      <h1>info Detail</h1>
+      <p>First Name : {props.data.firstName} </p>
+      <p>Last Name : {props.data.lastName}</p>
+      <p>Age : {props.data.age}</p>
+    </div>
+  );
 }
